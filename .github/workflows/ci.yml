@@ -20,7 +20,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: setup
-              run: go mod tidy
+              uses: actions/setup-go@v4
 
             - name: run test
               run: GOOS=linux GOARCH=amd64 go test ./...
